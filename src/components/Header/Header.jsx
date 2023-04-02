@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className="px-14 bg-purple-400 text-white flex gap-9">
+    <nav className="px-14 py-5 bg-purple-400 text-white flex gap-9">
       <Link to="/">Home</Link>
       <Link to="/about">About</Link>
       <Link to="/services">Services</Link>
