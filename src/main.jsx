@@ -50,6 +50,8 @@ const router = createBrowserRouter([
       {
         path: "post/:postId",
         element: <PostDetail></PostDetail>,
+        loader: ({ params }) =>
+          fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`),
       },
     ],
   },
