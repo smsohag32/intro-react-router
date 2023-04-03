@@ -17,10 +17,11 @@ const Header = () => {
           )}
         </span>
       </div>
+      {/* conditonal rendaring with className  */}
       <div
         className={`absolute md:static ${
-          open ? "top-9 w-full duration-700" : "-top-60 duration-700"
-        } `}
+          open ? "top-10 w-full duration-300" : "-top-60 duration-200"
+        }`}
       >
         <nav className="px-14 py-5 flex flex-col md:flex-row bg-purple-400 md:flex text-white md:gap-9">
           <Link to="/">Home</Link>
